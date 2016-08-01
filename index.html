@@ -199,6 +199,49 @@
 
       <div class="body-wrap">
   
+    <article id="post-JS总结" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/02/JS总结/" class="article-date">
+  	<time datetime="2016-08-01T18:43:04.409Z" itemprop="datePublished">2016-08-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="JS回调函数"><a href="#JS回调函数" class="headerlink" title="JS回调函数"></a>JS回调函数</h3><p>1、说明白点就是函数里面调用别的函数，在自己函数内容执行完之后执行要回调的函数<br>2、联想：Java的回调函数是怎样的？–&gt;</p>
+<p>###<a href="http://blog.csdn.net/huanghui8030/article/details/10148291" target="_blank" rel="external"> JS优化</a><br>1、使用x++        x—<br>2、循环    for(;;)    while()        for(in)    三种循环    ，for(in)效率最差-因为需要查询Hash键<br>3、遍历数组的时候先缓存，比如要遍历数组arr的时候先执行var len = arr.length<br>4、尽量使用局部变量，速度问题（局部是放在函数的栈里面，全局变量是window的对象的成员）<br>5、尽量少使用eval，可以使用函数的闭包实现模板<br>6、减少对象查找？？？？（不懂）<br>7、连接字符串最好使用s += s+str;<br>8、类型转换<br>            数字转化为字符串：(“”+1)&gt;.toString()&gt;new String()   效率<br>            浮点数转换为整型：推荐使用Math.floor()   Math.round();<br>            对于自定义的对象，使用toString()方法来进行类型转换<br>9、使用JOSN格式创建对象：json是直接复制    var boj = new Object();需要调用构造器<br>10、数组也使用JSON格式：比如[parrm,parrm,parrm]        一般数组new Array(parrm,parrm,parrm)  json格式是引擎直接解析，Array需要调用Array构造器<br>11、字符串进行循环操作（查找，替换）使用正则表达式：性能好<br>12、使用对象查询    ：[“”]比.item()快<br>13、减少对DOM的操作次数：比如插入  先将要插入的拼接好一次插入（保证N次创建一次插入）<br>14、将脚本放置底部</p>
+<h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-我的第一篇文章" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
